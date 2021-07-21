@@ -46,7 +46,7 @@ const Login = (props) => {
       setEmail("")
       setPass("")
       setError(null)
-      props.history.push("/workers")
+      props.history.push("/worker")
     } 
     catch(error){
       console.log(error)
@@ -78,7 +78,7 @@ const Login = (props) => {
       setEmail("")
       setPass("")
       setError(null)
-      props.history.push("/admin")
+      props.history.push("/worker")
     } catch(error){
       console.log(error)
       if(error.code === "auth/invalid-email"){
@@ -93,14 +93,17 @@ const Login = (props) => {
 
 
   return (
-    <div className = "mt-5">
+    <div className = "login-container">
+      <h2 className="text-center text-match" >Match de Skills</h2>
+      
+      <h1  className="text-center text-bienvenido">Bienvenido</h1>
       <h3 className="text-center">
        {
          esRegistro ?  "Registro Nuevos Usuarios" : "Usuarios ya registrados"
        }
       </h3>
-      <hr/>
-      <div className="row justify-content-center">
+   
+      <div className="row justify-content-center login-box">
         <div className="col-12 col-sm-8 col-md-6 col-xl-4">
         <form onSubmit={procesarDatos}> 
         {
@@ -112,7 +115,7 @@ const Login = (props) => {
         }
           <input 
           type="email" 
-          className="form-control mb-2"
+          className="form-control mb-2 input-email"
           placeholder="Ingrese su email"
           onChange={ e => setEmail(e.target.value)}
           value={email}
@@ -120,13 +123,13 @@ const Login = (props) => {
 
           <input 
           type="password" 
-          className="form-control mb-2"
+          className="form-control mb-2 input-password"
           placeholder="Crear un password"
           onChange={ e => setPass(e.target.value)}
           value={pass}
           />
       
-        <button className="btn btn-dark btn-lg btn-block"
+        <button className="btn btn-dark btn-lg btn-block btn-acceder"
                 type= "submit"
                 >
           {
@@ -135,12 +138,12 @@ const Login = (props) => {
         </button>
 
         <button 
-          className="btn btn-info btn-lg btn-block"
+          className="btn btn-info btn-lg btn-block btn-regisrado"
           onClick = {() => setEsRegistro (!esRegistro)}
           type="button"
           >
          {
-           esRegistro ? "Usuario Registrado" : "No tengo cuenta aún"
+           esRegistro ? "Usuario Registrado" : "No tengo cuenta"
          }
         </button>
         </form>

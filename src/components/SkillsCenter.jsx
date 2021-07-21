@@ -3,13 +3,34 @@ import {skillsData} from "../data/data"
 import '../App.css'
 
 const SkillsCenter = () => {
+
   return (
-    <div>
-      <h1>Base Datos</h1>
-       <div >
+    <div className= "skills-center">
+      <div className="skills-bar">
+        <h1 className="skills-title"> Skills Delivery Manager Zone</h1>
+      <div className= "logo"></div>
+        <div className= "">
+          <form>
+            <input 
+            type="text"
+            placeholder="Buscar por herramienta específica"
+            className="form-control-search"
+            />
+            <button 
+            className= 'btn-search'
+            type="submit"
+            > Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div className="barra-lateral"> </div>
+      <div className= "skills-container">  
+       <h4 className= "titulo-barra">Trabajadores, proyecto, herramientas: </h4>
         {
-          skillsData.map((data, key)=> (
-            <ul className= "data-box" key={key}>
+          skillsData.map((data, index)=> (
+            <ul className= "data-box" key={index}>
               <li> ID: {data.ID}</li>
               <li> Nombre: {data.Nombre}</li> 
               <li> REACT: {data['React Js']}</li>

@@ -16,25 +16,29 @@ const Navbar = (props) => {
       <Link className="navbar-brand" to="/"></Link>
         <div>
         <div className="d-flex">
-        <NavLink className="btn btn-primary mr-3 active" to="/" exact>
+           {/* <NavLink className="btn btn-primary mr-3 active" to="/" exact>
             Inicio
-        </NavLink>
+            </NavLink> */}
 
           {
           props.firebaseUser !== null ? (
-          <NavLink className="btn btn-primary float-end  mr-3 "to="/worker">
-            worker
+          <NavLink className="btn btn-transparent float-end  mr-3 "to="/worker">
+            Worker
           </NavLink>
           ) 
             :  null
           }
 
-          <NavLink className="btn btn-primary float-end  mr-3 "to="/skills-center">
+          <NavLink className="btn btn-transparent float-end  mr-3 "to="/skills-center">
                  Skills Center
           </NavLink>
 
+          <NavLink className="btn btn-transparent float-end  mr-3 "to="/everis-champion">
+                Everis-champion
+          </NavLink>
+
           {
-          props.firebaseUser !== null ? (
+            props.firebaseUser !== null ? (
             <button 
              className="btn btn-dark"
              onClick= {() => cerrarSesion()}
@@ -42,9 +46,9 @@ const Navbar = (props) => {
              Cerrar Sesion
              </button>
             ) : (
-          <NavLink className="btn btn-primary float-end  mr-3 "to="/login">
+           <NavLink className="btn btn-primary float-end  mr-3 "to="/login">
              Login
-          </NavLink>
+           </NavLink>
             )
           }      
         </div>

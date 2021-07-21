@@ -94,13 +94,15 @@ const Firestore = (props) => {
     return (
         <div>
             <div className="row">
-                <div className="col-md-6">
-                    <h3>Skills & Tools</h3>
+                <div className="">
+                    <h2>Skills & Tools</h2>
+                
                     <ul className="list-group">
                         {
                         tareas.map(item => (
                             <li className="list-group-item" key={item.id}>
-                            {item.name} - {moment(item.fecha).format("ll")}
+                            Nombre: {item.name} 
+                            <p> Fecha: {moment(item.fecha).format("ll")}</p>
                             <button 
                                 className="btn btn-danger btn-sm float-end"
                                 onClick={() => eliminar(item.id)}
@@ -127,7 +129,7 @@ const Firestore = (props) => {
                     <form onSubmit={modoEdicion ? editar : agregar}>
                         <input 
                         type="text"
-                        placeholder="Ingrese tarea"
+                        placeholder="Ingrese Skill"
                         className="form-control mb-2"
                         onChange={e => setTarea(e.target.value)}
                         value={tarea}

@@ -1,11 +1,13 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
+import EverisChampion from './components/EverisChampion';
 import Inicio from './components/Inicio';
 import Login from './components/Login';
 import Navbar from './components/Navbar';
 import SkillsCenter from './components/SkillsCenter';
 import Worker from './components/Worker';
 import {auth} from "./firebase"
+
 
 
 const App = () => {
@@ -24,8 +26,10 @@ const App = () => {
 
   return firebaseUser !==false ? (
     <Router>
-      <div className="container mt-5">
+      <div className="container-app">
+        
        <Navbar firebaseUser = {firebaseUser}/>
+
        <Switch>
        <Route path="/" exact>
            <Inicio />
@@ -41,6 +45,10 @@ const App = () => {
 
          <Route path="/skills-center">
           <SkillsCenter />
+         </Route>
+
+         <Route path="/everis-champion">
+         <EverisChampion/>
          </Route>
 
        </Switch>
