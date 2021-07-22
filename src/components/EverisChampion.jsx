@@ -2,7 +2,9 @@ import React from 'react';
 
 const EverisChampion = () => {
   return (
-    <div className="champion"></div>
+    <div className="champion">
+      
+    </div>
   );
 }
 

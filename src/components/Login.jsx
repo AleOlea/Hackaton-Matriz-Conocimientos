@@ -17,17 +17,17 @@ const Login = (props) => {
       setError("ingrese email")
       return
     }
+
     if (!pass.trim()) {
       // console.log("ingrese password")
       setError("ingrese password")
-      return
-      
+      return 
     }
+
     if(pass.length<6){
       // console.log("ingrese password igual a 6 caracteres")
       setError("ingrese password de 6 caracteres")
-      return
-      
+      return 
     }
     setError(null)
     console.log("Pasando todas las validaciones")
@@ -94,9 +94,8 @@ const Login = (props) => {
 
   return (
     <div className = "login-container">
-      <h2 className="text-center text-match" >Match de Skills</h2>
-      
       <h1  className="text-center text-bienvenido">Bienvenido</h1>
+      <h2 className="text-center text-match" >Match de Skills</h2>
       <h3 className="text-center">
        {
          esRegistro ?  "Registro Nuevos Usuarios" : "Usuarios ya registrados"
@@ -129,24 +128,24 @@ const Login = (props) => {
           value={pass}
           />
       
-        <button className="btn btn-dark btn-lg btn-block btn-acceder"
+          <button className="btn btn-dark btn-lg btn-block btn-acceder"
                 type= "submit"
-                >
+          >
           {
             esRegistro ? "Crear Una Cuenta": "Acceder"
           }
-        </button>
+          </button>
 
-        <button 
+          <button 
           className="btn btn-info btn-lg btn-block btn-regisrado"
           onClick = {() => setEsRegistro (!esRegistro)}
           type="button"
           >
-         {
+          {
            esRegistro ? "Usuario Registrado" : "No tengo cuenta"
          }
-        </button>
-        </form>
+          </button>
+         </form>
         </div>
       </div>
     </div>

@@ -32,6 +32,10 @@ const Navbar = (props) => {
           <NavLink className="btn btn-transparent float-end  mr-3 "to="/skills-center">
                  Skills Center
           </NavLink>
+          
+          {/* <NavLink className="btn btn-transparent float-end  mr-3 "to="/lider-equipo">
+                Lider-equipo
+          </NavLink> */}
 
           <NavLink className="btn btn-transparent float-end  mr-3 "to="/everis-champion">
                 Everis-champion
@@ -40,13 +44,13 @@ const Navbar = (props) => {
           {
             props.firebaseUser !== null ? (
             <button 
-             className="btn btn-dark"
+             className="btn btn-transparent"
              onClick= {() => cerrarSesion()}
              >
              Cerrar Sesion
              </button>
             ) : (
-           <NavLink className="btn btn-primary float-end  mr-3 "to="/login">
+           <NavLink className="btn btn-transparent float-end  mr-3 "to="/login">
              Login
            </NavLink>
             )

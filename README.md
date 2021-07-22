@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+<div style="text-align: justify">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Match de Skills :mag_right:
 
-## Available Scripts
+![](https://i.ibb.co/pKnpg24/team-6.png)
 
-In the project directory, you can run:
+## Índice
 
-### `yarn start`
+* [1. Introducción a la problemática del Cliente](#Introducción-a-la-problemática-del-Cliente)
+* [2. Desarrollo de Solución](#Desarrollo-de-Solución)
+* [3. Herramientas utilizadas](#Herramientas-utilizadas)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+## *Introducción a la problemática del Cliente*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Nuestro cliente *Everis NTT Data*, nos ha confiado el desarrollo de una plataforma web que les permita hacer un match entre los recursos humanos tecnológicos con los que cuentan y los requerimientos de sus clientes. Además de optimizar este proceso, nuestra app incorpora una funcionalidad para estimular a los colaboradores a mantener actualizados sus skills en la base de datos de la empresa.
 
-### `yarn build`
+## *Desarrollo de Solución*
+Para resolver ésta problemática primero identificamos tres usuarios: *Trabajador, Líder de Equipo y Skill-Delivery Manager*. A continuación te explicaremos como desarrollamos sus soluciones.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+*Trabajador:*
+El trabajador de Everis cuenta en su página principal con su perfil, About Me y sus proyectos.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![](https://i.ibb.co/DgbDw0Z/trabajador-1.jpg)
 
-### `yarn eject`
+Además puede acceder a sus herramientas, selecionarlas y agregar nuevas.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![](https://i.ibb.co/7bNY94m/trabajador-2.jpg)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![](https://i.ibb.co/QY7Bdnr/trabajador-3.jpg)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Y para que el trabajador quiera mantener actualizadas sus herramientas y tecnologías, ideamos un sistema de canje de puntos, llamado "Everis Match Points", los trabajadores obtendrán 1.000 puntos por cada herramienta validada, los cuales podrán ser canjeados por increíbles premios.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![](https://i.ibb.co/qmsS3kh/trabajador-4.png)
 
-## Learn More
+---
+*Líder de Equipo:*
+El líder de equipo es el encargado de validar las herramientas y tecnologías. Éstas pueden ser calificadas en Nulo, Básico, Regular, Bueno y Excelente. También cuenta con las validaciones pendientes y su historial de validaciones.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![](https://i.ibb.co/BLhbQZg/lider-tecnico-1.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+*Skills-Delivery Manager:*
+Ésta persona cuenta con toda la información de los trabajadores, herramientas, rubros y proyectos de Everis. Tiene diversos filtros a su disposición en el que puede seleccionar el mejor Match de manera rápida y sencilla.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![](https://i.ibb.co/JjNTC7s/sdm-1.png)
+![](https://i.ibb.co/LNS3Kvt/sdm-2.png)
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## *Herramientas utilizadas*
 
-### Making a Progressive Web App
+*React JS*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Instalar biblioteca Javascript React JS
 
-### Advanced Configuration
+npm i react
+`
+Instalar React Router
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+npm i react-router-dom
+`
+Instalar paquete de data table React JS
 
-### Deployment
+npm install react-data-table-component styled-components
+`
+*Firebase*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+npm i firebase
+`
+*Bootstrap*
 
-### `yarn build` fails to minify
+npm install bootstrap
+`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## *Deploy Firebase*
+</div>

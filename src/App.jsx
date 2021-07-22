@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import EverisChampion from './components/EverisChampion';
 import Inicio from './components/Inicio';
+// import LiderEquipo from './components/LiderEquipo';
 import Login from './components/Login';
 import Navbar from './components/Navbar';
 import SkillsCenter from './components/SkillsCenter';
@@ -33,6 +34,7 @@ const App = () => {
        <Switch>
        <Route path="/" exact>
            <Inicio />
+           <Login />
          </Route>
 
          <Route path="/login">
@@ -46,6 +48,10 @@ const App = () => {
          <Route path="/skills-center">
           <SkillsCenter />
          </Route>
+
+         {/* <Route path="/lider-equipo">
+          <LiderEquipo/>
+         </Route> */}
 
          <Route path="/everis-champion">
          <EverisChampion/>
