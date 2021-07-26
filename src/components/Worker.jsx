@@ -1,7 +1,6 @@
 import React from 'react';
 import {auth} from "../firebase"
 import {withRouter} from "react-router-dom"
-// import { Card } from 'react-bootstrap';
 import Firestore from './Firestore';
 
 const Worker = (props) => {
@@ -22,7 +21,7 @@ const Worker = (props) => {
       <div className="div-lateral"></div>
       <div className="workers-bar">
       <div className= "logo"></div>
-      <h1 className="worker-title">Fixing bug, añade más y solicita validación.</h1>
+      <h1 className="worker-title">Visualiza tus herramientas, añade más y solicita validación.</h1>
       </div>
       <div className = "workers-input">
          {
@@ -32,7 +31,6 @@ const Worker = (props) => {
       }
       </div>
       <div className= "tool-container">
-        {/* <div className="adding-tools"> */}
           <div className="developer-container">
         <div className="">
         <div className="card" style={{ width: '21rem' }}>
@@ -76,7 +74,6 @@ const Worker = (props) => {
       </div>
   );
 }
-
 export default withRouter(Worker)
 
 

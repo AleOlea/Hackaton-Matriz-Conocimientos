@@ -2,17 +2,14 @@ import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import EverisChampion from './components/EverisChampion';
 import Inicio from './components/Inicio';
-// import LiderEquipo from './components/LiderEquipo';
+import LiderEquipo from './components/LiderEquipo';
 import Login from './components/Login';
 import Navbar from './components/Navbar';
 import SkillsCenter from './components/SkillsCenter';
 import Worker from './components/Worker';
 import {auth} from "./firebase"
 
-
-
 const App = () => {
-
   const[firebaseUser, setFirebaseUser] = React.useState(false)
   React.useEffect(() => {
       auth.onAuthStateChanged(user => {
@@ -28,42 +25,38 @@ const App = () => {
   return firebaseUser !==false ? (
     <Router>
       <div className="container-app">
-        
        <Navbar firebaseUser = {firebaseUser}/>
-
        <Switch>
        <Route path="/" exact>
-           <Inicio />
-           <Login />
-         </Route>
+          <Inicio />
+          <Login />
+        </Route>
+        
+        <Route path="/login">
+          <Login />
+        </Route>
 
-         <Route path="/login">
-           <Login />
-         </Route>
+        <Route path="/worker">
+          <Worker />
+        </Route>
 
-         <Route path="/worker">
-           <Worker />
-         </Route>
-
-         <Route path="/skills-center">
+        <Route path="/skills-center">
           <SkillsCenter />
-         </Route>
+        </Route>
 
-         {/* <Route path="/lider-equipo">
+        <Route path="/lider-equipo">
           <LiderEquipo/>
-         </Route> */}
+        </Route>
 
-         <Route path="/everis-champion">
-         <EverisChampion/>
-         </Route>
+        <Route path="/everis-champion">
+          <EverisChampion/>
+        </Route>
 
-       </Switch>
+        </Switch>
       </div>
     </Router>
-   
   ) : (
     <p>Cargando...</p>
   )
 }
-
 export default App;

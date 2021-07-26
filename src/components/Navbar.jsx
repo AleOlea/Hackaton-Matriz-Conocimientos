@@ -19,7 +19,6 @@ const Navbar = (props) => {
            {/* <NavLink className="btn btn-primary mr-3 active" to="/" exact>
             Inicio
             </NavLink> */}
-
           {
           props.firebaseUser !== null ? (
           <NavLink className="btn btn-transparent float-end  mr-3 "to="/worker">
@@ -30,12 +29,12 @@ const Navbar = (props) => {
           }
 
           <NavLink className="btn btn-transparent float-end  mr-3 "to="/skills-center">
-                 Skills Center
+                Skills Center
           </NavLink>
           
-          {/* <NavLink className="btn btn-transparent float-end  mr-3 "to="/lider-equipo">
+          <NavLink className="btn btn-transparent float-end  mr-3 "to="/lider-equipo">
                 Lider-equipo
-          </NavLink> */}
+          </NavLink>
 
           <NavLink className="btn btn-transparent float-end  mr-3 "to="/everis-champion">
                 Everis-champion
