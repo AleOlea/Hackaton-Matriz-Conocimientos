@@ -11,9 +11,7 @@ const Firestore = (props) => {
     const [id, setId] = React.useState('')
   
     React.useEffect(() => {
-  
       const obtenerDatos = async () => {
-  
         try {
           const data = await db.collection(props.user.email).get()
           const arrayData = data.docs.map(doc => ({ id: doc.id, ...doc.data() }))
@@ -96,8 +94,7 @@ const Firestore = (props) => {
             <div className="row">
                 <div className="">
                     <h2>Skills & Tools</h2>
-                
-                    <ul className="list-group">
+                      <ul className="list-group">
                         {
                         tareas.map(item => (
                             <li className="list-group-item" key={item.id}>

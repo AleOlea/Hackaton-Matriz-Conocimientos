@@ -72,8 +72,8 @@ const SkillsCenter = () => {
             fixedHeaderScrollHeight="600px"
           />
        </div>
-        </div>
-       </div>
+      </div>
+    </div>
   );
 }
 export default SkillsCenter;

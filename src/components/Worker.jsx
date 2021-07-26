@@ -37,7 +37,7 @@ const Worker = (props) => {
         <div className="">
         <div className="card" style={{ width: '21rem' }}>
         <div className="card-header">
-        <h>VALIDAR HERRAMIENTAS</h>
+        <h2 className="float-center">VALIDAR HERRAMIENTAS</h2>
      </div>
    </div>
    <div className="card-body">
@@ -47,23 +47,17 @@ const Worker = (props) => {
            <option value="1">React JS</option>
            <option value="2">Angular</option>
            <option value="3">Vue JS</option>
-           <option value="4">Ionic React</option>
-           <option value="5">Ionic Angular</option>
-           <option value="6">iOS</option>
-           <option value="7">Android</option>
-           <option value="8">Xamarin</option>
-           <option value="9">Adobe</option>
-           <option value="10">Wordpress</option>
+          
          </select>
      <h5 className="card-title">Nivel:</h5>
-     <select className="float-center" style={{ width: '20rem' }}>
+     {/* <select className="float-center" style={{ width: '20rem' }}>
              <option value="0" selected="selected" disabled>Seleccionar</option>
              <option value="1">Nulo</option>
              <option value="2">Básico</option>
              <option value="3">Regular</option>
              <option value="4">Bueno</option>
              <option value="5">Excelente</option>
-         </select>
+         </select> */}
      <h5 className="card-title">Líder Técnico</h5>
        <input style={{ width: '20rem' }}></input>
      <h5 className="card-title">Fecha Ingreso:</h5>
@@ -71,17 +65,15 @@ const Worker = (props) => {
      <h5 className="card-title">Añadir Comentarios</h5>
        <textarea name="comentarios" rows="5" cols="25"></textarea>
      <h5 className="card-title">Añadir archivos</h5>
-      <form method="post" enctype="multipart/form-data">
+      {/* <form method="post" encType="multipart/form-data">
           <input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple />
-       </form>
+       </form> */}
      <button>SOLICITAR VALIDACIÓN</button>
    </div>
  </div>
 </div> 
     </div>
       </div>
-      
-    
   );
 }
 
