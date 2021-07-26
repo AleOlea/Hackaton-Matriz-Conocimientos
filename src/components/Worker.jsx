@@ -22,7 +22,7 @@ const Worker = (props) => {
       <div className="div-lateral"></div>
       <div className="workers-bar">
       <div className= "logo"></div>
-      <h1 className="worker-title">Visualiza tus herramientas, añade más y solicita validación.</h1>
+      <h1 className="worker-title">Fixing bug, añade más y solicita validación.</h1>
       </div>
       <div className = "workers-input">
          {
