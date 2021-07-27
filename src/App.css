@@ -244,12 +244,12 @@
 .leader-bar{
   display: grid;
   grid-template-columns: 75% 25%;
-  grid-template-rows: 40% 40%;
+  grid-template-rows: 50% 40%;
   grid-column: 2 / 4;
   grid-row: 1 / 1;
   align-items: center; 
   justify-items: center; 
-  border: 2px solid rgb(243, 236, 236);
+  border-bottom: 3px solid rgb(218, 211, 211);
 }
 
 .logo-leader{
@@ -274,4 +274,5 @@
 .lider-subtitle{
   align-self: flex-start;
   font-size: 36px;
+  color: #FF3104;
 }

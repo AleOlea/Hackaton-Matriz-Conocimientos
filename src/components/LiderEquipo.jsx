@@ -7,7 +7,7 @@ const LiderEquipo = () => {
       <div className="leader-bar">
       <div className="logo-leader"></div>
       <h1 className= "lider-title">Hola Eduardo!</h1>
-      <h2 className= "lider-subtitle">Hay validanciones pendientes</h2>
+      <h2 className= "lider-subtitle">Hay validaciones pendientes</h2>
       </div>
       
     <div className="adding-tools">
