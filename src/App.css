@@ -268,11 +268,11 @@
 .lider-title{
   grid-column: 1 / 4;
   grid-row: 2 / 2;
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .lider-subtitle{
   align-self: flex-start;
-  font-size: 36px;
+  font-size: 24px;
   color: #FF3104;
 }
